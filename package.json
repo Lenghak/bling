@@ -8,6 +8,7 @@
 		"cruise": "bunx depcruise"
 	},
 	"dependencies": {
+		"@hono/valibot-validator": "^0.2.5",
 		"@langchain/community": "^0.0.57",
 		"@langchain/core": "^0.1.63",
 		"hono": "^4.3.6",

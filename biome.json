@@ -5,7 +5,7 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"formatWithErrors": true,
+		"formatWithErrors": false,
 		"ignore": [],
 		"attributePosition": "auto",
 		"indentStyle": "tab",
