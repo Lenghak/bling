@@ -16,9 +16,7 @@ app
 	.use(secureHeaders())
 	.use(trimTrailingSlash());
 
-app.get("/", (c) => {
-	return c.text("Hello Hono!");
-});
+app.get("/", async (c) => {});
 
 export default {
 	port: 9000,
