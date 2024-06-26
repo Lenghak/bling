@@ -6,7 +6,7 @@ LIGHT_BLUE='\033[1;34m'
 NO_COLOR='\033[0m'
 
 echo "${LIGHT_BLUE}!${NO_COLOR} Formatting Staged Files"
-bun lint-staged
+bun lint-staged ${staged}
 
 echo "${GREEN} Formatted" ${staged}
 echo "${GREEN}✔${NO_COLOR} Done Formatting"

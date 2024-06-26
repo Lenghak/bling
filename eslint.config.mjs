@@ -15,6 +15,10 @@ export default [
 			...jsRules.configs.recommended.rules,
 			...prettierPlugin.configs.recommended.rules,
 			...eslintConfigPrettier.rules,
+			"@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_" },
+      ],
 		},
 		ignores: [
 			"**/*.log",

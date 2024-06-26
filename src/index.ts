@@ -17,7 +17,11 @@ app
 	.use(secureHeaders())
 	.use(trimTrailingSlash());
 
-app.get("/", async () => {});
+app.get("/", async (c) => {
+	return c.json({
+		data: "somthing",
+	});
+});
 
 export default {
 	port: 9000,

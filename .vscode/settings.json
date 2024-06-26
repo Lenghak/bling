@@ -1,20 +1,10 @@
 {
 	"workbench.iconTheme": "monospace-icons",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"prettier.configPath": "./../.prettierrc.cjs",
-	"[json]": {
-		"editor.quickSuggestions": {
-			"strings": true
-		},
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.suggest.insertMode": "replace"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
+	"prettier.configPath": ".prettierrc.cjs",
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "always",
-		"source.organizeImports.biome": "always"
+		"source.organizeImports": "always"
 	},
 	"editor.formatOnSave": false
 }
