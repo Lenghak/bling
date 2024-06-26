@@ -9,7 +9,7 @@ module.exports = {
 	useTabs: true,
 	parser: "typescript",
 	plugins: [require.resolve("@trivago/prettier-plugin-sort-imports")],
-	importOrder: ["<THIRD_PARTY_MODULES>", "^[./]", "^@/types/(.*)$"],
+	importOrder: ["^hono","<THIRD_PARTY_MODULES>", "^[./]", "^@/types/(.*)$"],
 	importOrderParserPlugins: ["typescript", "decorators-legacy"],
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,

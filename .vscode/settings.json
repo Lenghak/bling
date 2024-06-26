@@ -2,9 +2,8 @@
 	"workbench.iconTheme": "monospace-icons",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.configPath": ".prettierrc.cjs",
+	"editor.formatOnSave": false,
 	"editor.codeActionsOnSave": {
-		"source.fixAll": "always",
-		"source.organizeImports": "always"
-	},
-	"editor.formatOnSave": false
+		"source.fixAll.eslint": "always"
+	}
 }
