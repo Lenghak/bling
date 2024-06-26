@@ -1,17 +1,17 @@
-# #!/usr/bin/env sh
-# . "$(dirname -- "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-# GREEN='\033[0;32m'
-# LIGHT_BLUE='\033[1;34m'
-# NO_COLOR='\033[0m'
+GREEN='\033[0;32m'
+LIGHT_BLUE='\033[1;34m'
+NO_COLOR='\033[0m'
 
-# echo "${LIGHT_BLUE}!${NO_COLOR} Formatting Staged Files"
-# # bun format --staged --no-errors-on-unmatched
+echo "${LIGHT_BLUE}!${NO_COLOR} Formatting Staged Files"
+bun lint-staged
 
-# echo "${GREEN} Formatted" ${staged}
-# echo "${GREEN}✔${NO_COLOR} Done Formatting"
+echo "${GREEN} Formatted" ${staged}
+echo "${GREEN}✔${NO_COLOR} Done Formatting"
 
-# echo "${LIGHT_BLUE}!${NO_COLOR} Checking for Circlar Dependency"
-# bun run cruise src || exit $
+echo "${LIGHT_BLUE}!${NO_COLOR} Checking for Circlar Dependency"
+bun run cruise src || exit $
 
-# echo "${GREEN}✔${NO_COLOR} Done Running Pre-commit\n"
+echo "${GREEN}✔${NO_COLOR} Done Running Pre-commit\n"

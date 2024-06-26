@@ -5,6 +5,7 @@ import { logger } from "hono/logger";
 import { prettyJSON } from "hono/pretty-json";
 import { secureHeaders } from "hono/secure-headers";
 import { trimTrailingSlash } from "hono/trailing-slash";
+
 const app = new Hono();
 
 // util
@@ -16,7 +17,7 @@ app
 	.use(secureHeaders())
 	.use(trimTrailingSlash());
 
-app.get("/", async (c) => {});
+app.get("/", async () => {});
 
 export default {
 	port: 9000,
