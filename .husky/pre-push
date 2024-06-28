@@ -9,6 +9,6 @@ echo "\n${LIGHT_BLUE}!${NO_COLOR} - Updating Remote"
 git remote update
 
 echo "\n${LIGHT_BLUE}!${NO_COLOR} - Pulling updates"
-git pull origin
+git pull origin main
 
 echo "${GREEN}✔${NO_COLOR} - Done Running Pre-Push\n"
